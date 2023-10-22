@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ar">
+<script src="https://code.angularjs.org/1.5.7/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>قائمة التسوق</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <style>
+        .emptyMessage {
+            font-weight: bold;
+            color: red;
+            font-size: 1.2em;
+        }
+
+        li {
+            margin-bottom: 7px;
+            font-size: 1.2em;
+        }
+
+        li > button {
+            margin-left: 6px;
+        }
+
+        button > span {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>قائمة التسوق</h1>
+
+        <div class="row">
+            <!-- قائمة للشراء -->
+            <div class="col-md-6">
+                <h2>للشراء:</h2>
+                <ul>
+                    <li>10 بسكويت <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> تم الشراء</button></li>
+                    <li>10 بسكويت <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> تم الشراء</button></li>
+                </ul>
+                <div class="emptyMessage">تم شراء الكل!</div>
+            </div>
+
+            <!-- قائمة تم شراءها -->
+            <div class="col-md-6">
+                <h2>تم شراءها:</h2>
+                <ul>
+                    <li>تم شراء 10 بسكويت</li>
+                </ul>
+                <div class="emptyMessage">لم يتم شراء أي شيء بعد.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
